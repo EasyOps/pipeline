@@ -36,7 +36,7 @@ class COCO(_COCO):
         return self.loadImgs(ids)
     
     
-
+@BaseDataset.register
 @DATASETS.register_module()
 class COCODataset(object):
     

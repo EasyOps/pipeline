@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from ..utils import Registry, build_from_cfg
+from ..utils import Registry, build_from_cfg, TranformsErrorType, KeyTransformsNotInDataset
 
 DATASETS = Registry('dataset')
 
@@ -13,6 +13,7 @@ class BaseDataset(ABC):
     def __load__(self, *args, **kwargs):
         ...
         
+    @abstractmethod
     def __save__(self, *args, **kwargs):
         ...
     

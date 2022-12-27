@@ -6,7 +6,6 @@ from ..base import (
     TranformsErrorType,
     KeyTransformsNotInDataset,
 )
-import pandas as pd
 import logging
 from typing import Any, Union, Dict, List
 
